@@ -1,0 +1,198 @@
+/*
+ * Nord Light — https://www.nordtheme.com/docs/colors-and-palettes
+ * Nord is dark-only upstream. This variant uses Snow Storm backgrounds with
+ * Polar Night text, and darkens the Frost/Aurora syntax colors for contrast.
+ */
+.light-theme {
+  /* UI colors */
+  --background: #eceff4;
+  --base-gray: #4c566a;
+  --base-blue: #5e81ac;
+  --base-green: #a3be8c;
+  --base-yellow: #ebcb8b;
+  --base-orange: #d08770;
+  --base-red: #bf616a;
+  --base-purple: #b48ead;
+  --base-pink: #b48ead;
+  --base-accent: #5e81ac;
+
+  /* Gray scale pinned to Snow Storm / Polar Night. The generated scale drifts
+   * to a neutral gray that loses Nord's blue tint. */
+  --gray-1: #eceff4;
+  --gray-2: #e5e9f0;
+  --gray-3: #d8dee9;
+  --gray-4: #ced5e1;
+  --gray-5: #c5cdda;
+  --gray-6: #b8c1d0;
+  --gray-7: #a5afc1;
+  --gray-8: #8f9bb0;
+  --gray-9: #7b879d;
+  --gray-10: #636e85;
+  --gray-11: #4c566a;
+  --gray-12: #2e3440;
+  --gray-a1: #2e344003;
+  --gray-a2: #2e344008;
+  --gray-a3: #2e344016;
+  --gray-a4: #2e344022;
+  --gray-a5: #2e34402d;
+  --gray-a6: #2e34403d;
+  --gray-a7: #2e344055;
+  --gray-a8: #2e344070;
+  --gray-a9: #2e34408b;
+  --gray-a10: #2e3440ad;
+  --gray-a11: #2e3440cf;
+  --gray-a12: #2e3440ff;
+
+  /* Editor colors */
+  --nord-bg: #eceff4;
+  --nord-fg: #2e3440;
+  --nord-cursor: #2e3440;
+  --nord-line: #e5e9f0;
+  --nord-selection: #81a1c14d;
+  --nord-selection-inactive: #81a1c133;
+  --nord-find-match: #88c0d066;
+  --nord-find-match-inactive: #88c0d033;
+  --nord-line-number: #9aa3b3;
+  --nord-line-number-active: #2e3440;
+  --nord-indent-guide: #d8dee9;
+  --nord-indent-guide-active: #9aa3b3;
+  --nord-punctuation: #4c566a;
+
+  /* Syntax colors */
+  --nord-comment: #6f7b92;
+  --nord-keyword: #5e81ac;
+  --nord-function: #2f7a91;
+  --nord-type: #3f7f7d;
+  --nord-string: #5d7f42;
+  --nord-number: #8a5f85;
+  --nord-regexp: #8f6b17;
+  --nord-decorator: #a65b40;
+  --nord-deleted: #a8505a;
+}
+
+/* Nord — https://www.nordtheme.com/docs/colors-and-palettes */
+.dark-theme {
+  /* UI colors */
+  --background: #2e3440;
+  --base-gray: #4c566a;
+  --base-blue: #81a1c1;
+  --base-green: #a3be8c;
+  --base-yellow: #ebcb8b;
+  --base-orange: #d08770;
+  --base-red: #bf616a;
+  --base-purple: #b48ead;
+  --base-pink: #b48ead;
+  --base-accent: #88c0d0;
+
+  /* Gray scale pinned to Polar Night / Snow Storm. The generated scale drifts
+   * to a neutral gray that loses Nord's blue tint. */
+  --gray-1: #2e3440;
+  --gray-2: #353c4a;
+  --gray-3: #3b4252;
+  --gray-4: #434c5e;
+  --gray-5: #485165;
+  --gray-6: #4c566a;
+  --gray-7: #56617a;
+  --gray-8: #616e88;
+  --gray-9: #6f7b94;
+  --gray-10: #8a95ab;
+  --gray-11: #d8dee9;
+  --gray-12: #eceff4;
+  --gray-a1: #eceff403;
+  --gray-a2: #eceff40b;
+  --gray-a3: #eceff414;
+  --gray-a4: #eceff422;
+  --gray-a5: #eceff42a;
+  --gray-a6: #eceff430;
+  --gray-a7: #eceff441;
+  --gray-a8: #eceff453;
+  --gray-a9: #eceff464;
+  --gray-a10: #eceff487;
+  --gray-a11: #eceff4e9;
+  --gray-a12: #eceff4ff;
+
+  /* Editor colors */
+  --nord-bg: #2e3440;
+  --nord-fg: #d8dee9;
+  --nord-cursor: #d8dee9;
+  --nord-line: #3b4252;
+  --nord-selection: #434c5ecc;
+  --nord-selection-inactive: #434c5e99;
+  --nord-find-match: #88c0d066;
+  --nord-find-match-inactive: #88c0d033;
+  --nord-line-number: #4c566a;
+  --nord-line-number-active: #d8dee9;
+  --nord-indent-guide: #434c5eb3;
+  --nord-indent-guide-active: #4c566a;
+  --nord-punctuation: #eceff4;
+
+  /* Syntax colors */
+  --nord-comment: #616e88;
+  --nord-keyword: #81a1c1;
+  --nord-function: #88c0d0;
+  --nord-type: #8fbcbb;
+  --nord-string: #a3be8c;
+  --nord-number: #b48ead;
+  --nord-regexp: #ebcb8b;
+  --nord-decorator: #d08770;
+  --nord-deleted: #bf616a;
+}
+
+.light-theme,
+.dark-theme {
+  /* ===== Editor ===== */
+
+  /* Editor chrome */
+  --editor-bg: var(--nord-bg);
+  --editor-fg: var(--nord-fg);
+  --editor-cursor-bg: var(--nord-cursor);
+  --editor-selected-bg: var(--nord-selection);
+  --editor-activeline-bg: var(--nord-line);
+  --editor-activeline-gutter-bg: var(--nord-line);
+  --editor-error-fg: var(--nord-deleted);
+  --editor-gutter-bg: var(--nord-bg);
+  --editor-linenumber-fg: var(--nord-line-number);
+  --editor-linenumber-active-fg: var(--nord-line-number-active);
+  --editor-foldgutter-fg: var(--nord-line-number);
+  --editor-foldgutter-fg-hover: var(--nord-line-number-active);
+  --editor-indent-marker-bg: var(--nord-indent-guide);
+  --editor-indent-marker-active-bg: var(--nord-indent-guide-active);
+
+  /* Matches and markers */
+  --editor-guttermarker-subtle-fg: var(--nord-line-number);
+  --editor-matchingselection-bg: var(--nord-selection-inactive);
+  --editor-searchmatch-bg: var(--nord-find-match-inactive);
+  --editor-searchmatch-selected-bg: var(--nord-find-match);
+  --editor-matchingbracket-fg: var(--nord-fg);
+  --editor-matchingbracket-bg: var(--nord-selection-inactive);
+  --editor-fatcursor-bg: var(--nord-cursor);
+
+  /* ===== Color Syntax ===== */
+
+  --syntax-comment: var(--nord-comment);
+  --syntax-constant: var(--nord-number);
+  --syntax-decorator: var(--nord-decorator);
+  --syntax-function: var(--nord-function);
+  --syntax-keyword: var(--nord-keyword);
+  --syntax-link: var(--nord-function);
+  --syntax-punctuation: var(--nord-punctuation);
+  --syntax-string: var(--nord-string);
+  --syntax-type: var(--nord-type);
+  --syntax-variable: var(--nord-fg);
+  --syntax-diff: var(--nord-deleted);
+
+  --editor-self-fg: var(--nord-keyword);
+  --editor-bool-fg: var(--nord-keyword);
+  --editor-null-fg: var(--nord-keyword);
+  --editor-regexp-fg: var(--nord-regexp);
+  --editor-escape-fg: var(--nord-regexp);
+  --editor-operator-fg: var(--nord-keyword);
+  --editor-attributeName-fg: var(--nord-type);
+  --editor-heading-fg: var(--nord-function);
+  --editor-strikethrough-fg: var(--nord-comment);
+
+  /* ===== Mongo Shell ===== */
+
+  --mongo-shell-mongo-prompt-fg: var(--nord-function);
+  --mongo-shell-ansi-output-fg: var(--nord-fg);
+}

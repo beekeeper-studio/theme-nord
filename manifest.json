@@ -1,0 +1,10 @@
+{
+  "id": "nord",
+  "name": "Nord",
+  "author": {
+    "name": "Beekeeper Studio",
+    "url": "https://www.beekeeperstudio.io"
+  },
+  "description": "A theme based on the Nord palette.",
+  "version": "1.0.0"
+}
